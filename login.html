@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexus55 — Entrar</title>
+
+    <meta
+        name="description"
+        content="Entre ou crie sua conta no Nexus55."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <section class="auth-brand">
+
+            <a href="index.html" class="auth-logo">
+                <span class="logo-mark">N</span>
+                <span>Nexus<span>55</span></span>
+            </a>
+
+            <div class="brand-content">
+                <span class="brand-label">NEXUS55</span>
+
+                <h1>
+                    Transforme suas ideias
+                    em aplicativos.
+                </h1>
+
+                <p>
+                    Crie, organize e desenvolva seus projetos
+                    com uma plataforma construída para transformar
+                    ideias em produtos digitais.
+                </p>
+            </div>
+
+            <div class="brand-footer">
+                <span class="status-dot"></span>
+                Plataforma em desenvolvimento
+            </div>
+
+        </section>
+
+
+        <section class="auth-panel">
+
+            <div class="auth-box">
+
+                <div class="mobile-logo">
+                    <a href="index.html" class="auth-logo">
+                        <span class="logo-mark">N</span>
+                        <span>Nexus<span>55</span></span>
+                    </a>
+                </div>
+
+
+                <!-- LOGIN -->
+
+                <div class="auth-form active" id="loginForm">
+
+                    <div class="form-heading">
+
+                        <span class="form-label">
+                            BEM-VINDO DE VOLTA
+                        </span>
+
+                        <h2>Entrar na sua conta</h2>
+
+                        <p>
+                            Acesse seu workspace do Nexus55.
+                        </p>
+
+                    </div>
+
+
+                    <form id="loginFormElement">
+
+                        <div class="input-group">
+
+                            <label for="loginEmail">
+                                E-mail
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>
+                                    <path d="m3 7 9 6 9-6"/>
+                                </svg>
+
+                                <input
+                                    type="email"
+                                    id="loginEmail"
+                                    name="email"
+                                    placeholder="seu@email.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <div class="label-row">
+
+                                <label for="loginPassword">
+                                    Senha
+                                </label>
+
+                                <button
+                                    type="button"
+                                    class="forgot-password"
+                                    id="forgotPassword"
+                                >
+                                    Esqueceu a senha?
+                                </button>
+
+                            </div>
+
+
+                            <div class="input-wrapper">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <rect
+                                        x="4"
+                                        y="10"
+                                        width="16"
+                                        height="11"
+                                        rx="2"
+                                    />
+                                    <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                                </svg>
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    name="password"
+                                    placeholder="Digite sua senha"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="loginPassword"
+                                    aria-label="Mostrar senha"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/>
+                                        <circle cx="12" cy="12" r="2.5"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="auth-submit"
+                        >
+                            <span>Entrar</span>
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M5 12h14"/>
+                                <path d="m13 6 6 6-6 6"/>
+                            </svg>
+
+                        </button>
+
+                    </form>
+
+
+                    <div class="auth-divider">
+                        <span>ou</span>
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="switch-auth"
+                        id="showRegister"
+                    >
+                        Ainda não possui uma conta?
+                        <strong>Criar conta</strong>
+                    </button>
+
+                </div>
+
+
+
+                <!-- CADASTRO -->
+
+                <div class="auth-form" id="registerForm">
+
+                    <div class="form-heading">
+
+                        <span class="form-label">
+                            COMEÇAR AGORA
+                        </span>
+
+                        <h2>Criar sua conta</h2>
+
+                        <p>
+                            Crie seu workspace gratuitamente.
+                        </p>
+
+                    </div>
+
+
+                    <form id="registerFormElement">
+
+                        <div class="input-group">
+
+                            <label for="registerName">
+                                Nome
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 21a8 8 0 0 1 16 0"/>
+                                </svg>
+
+                                <input
+                                    type="text"
+                                    id="registerName"
+                                    name="name"
+                                    placeholder="Seu nome"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="registerEmail">
+                                E-mail
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>
+                                    <path d="m3 7 9 6 9-6"/>
+                                </svg>
+
+                                <input
+                                    type="email"
+                                    id="registerEmail"
+                                    name="email"
+                                    placeholder="seu@email.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="registerPassword">
+                                Senha
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <rect
+                                        x="4"
+                                        y="10"
+                                        width="16"
+                                        height="11"
+                                        rx="2"
+                                    />
+                                    <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                                </svg>
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    name="password"
+                                    placeholder="Crie uma senha"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="registerPassword"
+                                    aria-label="Mostrar senha"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/>
+                                        <circle cx="12" cy="12" r="2.5"/>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="terms">
+
+                            <label class="checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    id="acceptTerms"
+                                    required
+                                >
+
+                                <span class="checkmark"></span>
+
+                                <span>
+                                    Concordo com os
+                                    <a href="#" onclick="return false;">
+                                        Termos de Uso
+                                    </a>
+                                    e a
+                                    <a href="#" onclick="return false;">
+                                        Política de Privacidade
+                                    </a>.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="auth-submit"
+                        >
+                            <span>Criar conta</span>
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M5 12h14"/>
+                                <path d="m13 6 6 6-6 6"/>
+                            </svg>
+
+                        </button>
+
+                    </form>
+
+
+                    <div class="auth-divider">
+                        <span>ou</span>
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="switch-auth"
+                        id="showLogin"
+                    >
+                        Já possui uma conta?
+                        <strong>Entrar</strong>
+                    </button>
+
+                </div>
+
+
+                <p class="auth-security">
+                    Seus dados são protegidos e utilizados somente
+                    para o funcionamento da sua conta.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div
+        class="toast"
+        id="authToast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
